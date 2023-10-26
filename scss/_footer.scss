@@ -1,0 +1,92 @@
+.footer{
+    margin-top: auto;
+    border-top: 1px solid $light;
+    border-left: 1px solid $light;
+
+    @include bp(sm){
+        border: none;
+    }
+
+    &__logo{
+        margin-bottom: 4.7rem;
+
+        @include bp(sm){
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+
+        @include bp(md){
+            grid-template-columns: repeat(2, 50%);
+        }
+
+        @include bp(sm){
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__col{
+        border-right: 1px solid $light;
+        border-bottom: 1px solid $light;
+        padding: 8rem 14.5% 3.9rem;
+
+        @include bp(xl){
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        @include bp(lg){
+            padding: 3.2rem 1.6rem 3.9rem;
+        }
+
+        @include bp(sm){
+            border-right: 0;
+        }
+    }
+
+    &-nav{
+        &__item{
+            margin-bottom: 1.2rem;
+
+            @include bp(sm){
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    p{
+        margin-bottom: 1.2rem;
+
+        @include bp(sm){
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__bottom{
+        border-top: 1px solid $light;
+        padding: 3.1rem 5.2rem;
+
+        @include bp(xl){
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        @include bp(lg){
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
+        }
+    }
+}
+
+.copyright{
+    @include bp(sm){
+    margin-bottom: 0.8rem;
+    }
+}
