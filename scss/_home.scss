@@ -51,13 +51,14 @@
   &__item {
     margin-right: 7.9rem;
 
-    @include bp(md){
-      margin-right: 3rem;
+    @include bp(lg){
+      margin-right: 5rem;
     }
 
-    @include bp(sm){
+    @include bp(md){
       margin: 0 0 0.8rem;
     }
+
   }
 
   &__icon {
@@ -184,7 +185,7 @@
       line-height: 104.762%;
 
       @include bp(md){
-        font-size: 3.2rem;
+        font-size: 3rem;
       }
 
       @include bp(sm){
@@ -262,7 +263,7 @@
       display: grid;
       margin-bottom: -1.2rem;
 
-      @include bp(sm){
+      @include bp(md){
         display: none;
       }
     }
@@ -275,7 +276,7 @@
     padding: 3.2rem 0 3.8rem;
     border-bottom: 1px solid $light;
 
-    @include bp(sm){
+    @include bp(md){
       grid-template-columns: 100%;
       grid-gap: 1.4rem;
       padding-bottom: 3.1rem;
@@ -284,9 +285,6 @@
         border: none;
         padding-bottom: 0;
       }
-    }
-
-    &__title {
     }
 
     &__text {
@@ -311,7 +309,7 @@
 
     &__row{
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 33.3%);
     }
 
   }

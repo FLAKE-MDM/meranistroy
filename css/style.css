@@ -795,6 +795,11 @@ p {
   font-weight: 400;
   position: relative;
 }
+@media only screen and (max-width: 991px) {
+  .title {
+    font-size: 4.5rem;
+  }
+}
 @media only screen and (max-width: 767px) {
   .title {
     font-size: 2.8rem;
@@ -927,12 +932,7 @@ body.overflow-none {
   margin: 0 auto;
   width: 100%;
 }
-@media only screen and (max-width: 991px) {
-  .container {
-    max-width: 750px;
-  }
-}
-@media only screen and (max-width: 1199px) {
+@media only screen and (min-width: 992px) {
   .container {
     max-width: 970px;
   }
@@ -1645,12 +1645,12 @@ body.overflow-none {
 .contacts-list__item {
   margin-right: 7.9rem;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1199px) {
   .contacts-list__item {
-    margin-right: 3rem;
+    margin-right: 5rem;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .contacts-list__item {
     margin: 0 0 0.8rem;
   }
@@ -1776,7 +1776,7 @@ body.overflow-none {
 }
 @media only screen and (max-width: 991px) {
   .about-item__num {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1850,7 +1850,7 @@ body.overflow-none {
   display: grid;
   margin-bottom: -1.2rem;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .step-section__header {
     display: none;
   }
@@ -1862,7 +1862,7 @@ body.overflow-none {
   padding: 3.2rem 0 3.8rem;
   border-bottom: 1px solid #B8DBFF;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .step-item {
     grid-template-columns: 100%;
     grid-gap: 1.4rem;
@@ -1889,7 +1889,7 @@ body.overflow-none {
 }
 .advantages-section__row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 33.3%);
 }
 .advantages-item {
   border: 1px solid #B8DBFF;

@@ -27,6 +27,10 @@ p{
     font-weight: 400;
     position: relative;
 
+    @include bp(md){
+        font-size: 4.5rem;
+    }
+
     @include bp(sm){
         font-size: 2.8rem;
         line-height: 3.4rem;
