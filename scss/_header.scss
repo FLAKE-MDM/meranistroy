@@ -81,7 +81,7 @@
 
 .nav{
     @include bp(md-up){
-        display: block;
+        display: block!important;
     }
 
     @include bp(sm){

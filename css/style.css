@@ -1490,7 +1490,7 @@ body.overflow-none {
 
 @media only screen and (min-width: 768px) {
   .nav {
-    display: block;
+    display: block !important;
   }
 }
 @media only screen and (max-width: 767px) {
