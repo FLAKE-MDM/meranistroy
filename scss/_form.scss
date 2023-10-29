@@ -37,6 +37,7 @@
         background: transparent;
         transition: all 0.3s ease-out;
         font-weight: 500;
+        color: $primary;
 
         @include bp(sm){
             font-weight: 400;

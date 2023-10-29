@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     z-index: 95;
-    background: #fff;
+    background: #F8FCFF;
     transition: all 0.3s ease-out;
 
     &_transparent{
@@ -16,7 +16,7 @@
         }
 
         &.fixed{
-            background: #fff;
+            background: #F8FCFF;
 
             .nav-list__link:before, .nav-list__link:after{
                 color: $black;
@@ -33,7 +33,7 @@
     }
 
     &_bg{
-        background: #fff;
+        background: #F8FCFF;
 
             .nav-list__link:before, .nav-list__link:after{
                 color: $black;

@@ -184,6 +184,10 @@ new Swiper(".image-slider", {
   },
 });
 
+// mask
+$(document).ready(function(){
+  $('.mask').inputmask("+7 999 999 999");
+});
 
 
 // new Swiper(".project-slider", {

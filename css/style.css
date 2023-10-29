@@ -1191,6 +1191,7 @@ body.overflow-none {
   background: transparent;
   transition: all 0.3s ease-out;
   font-weight: 500;
+  color: #2C92FD;
 }
 @media only screen and (max-width: 767px) {
   .form-control {
@@ -1427,7 +1428,7 @@ body.overflow-none {
   left: 0;
   right: 0;
   z-index: 95;
-  background: #fff;
+  background: #F8FCFF;
   transition: all 0.3s ease-out;
 }
 .header_transparent {
@@ -1437,7 +1438,7 @@ body.overflow-none {
   color: #fff;
 }
 .header_transparent.fixed {
-  background: #fff;
+  background: #F8FCFF;
 }
 .header_transparent.fixed .nav-list__link:before, .header_transparent.fixed .nav-list__link:after {
   color: #1B293B;
@@ -1449,7 +1450,7 @@ body.overflow-none {
   opacity: 0;
 }
 .header_bg {
-  background: #fff;
+  background: #F8FCFF;
 }
 .header_bg .nav-list__link:before, .header_bg .nav-list__link:after {
   color: #1B293B;
@@ -1636,6 +1637,16 @@ body.overflow-none {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .image-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -2050,7 +2061,6 @@ body.overflow-none {
 }
 .technologies-item__body {
   margin-top: auto;
-  background: #fff;
   transition: all 0.3s ease-out;
   opacity: 0;
   max-width: 36rem;
@@ -2252,6 +2262,11 @@ body.overflow-none {
 @media only screen and (max-width: 767px) {
   .contatcs-section__content p {
     margin-bottom: 1.6rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contatcs-section__image {
+    position: absolute;
   }
 }
 .contatcs-section__title {
