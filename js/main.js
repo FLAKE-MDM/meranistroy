@@ -189,6 +189,19 @@ $(document).ready(function(){
   $('.mask').inputmask("+7 999 999 999");
 });
 
+// filter
+$('.fake-select__item').click(function(){
+  $(this).parents(".fake-select").find('.fake-select__item').removeClass('active');
+  $(this).addClass('active');
+  $(this).parents('.fake-select').find('.fake-select__value').html(this.innerHTML)
+  $(this).parents('.fake-select').find('.fake-select__link').addClass('active');
+});
+
+$('.sort__item').click(function(e){
+  e.preventDefault();
+  $(this).parents(".sort").find('.sort__item').removeClass('active');
+  $(this).addClass('active');
+});
 
 // new Swiper(".project-slider", {
 //   slidesPerView: 1,
@@ -443,13 +456,7 @@ $(document).ready(function(){
 // });
 
 // // calculator
-// // fake-select
-// $('.fake-select__item').click(function(){
-//   $(this).parents(".fake-select").find('.fake-select__item').removeClass('fake-select__item_active active');
-//   $(this).addClass('fake-select__item_active');
-//   $(this).parents('.fake-select').find('.fake-select__value').html(this.innerHTML)
-//   $(this).parents('.fake-select').find('.fake-select__link').addClass('active');
-// });
+
 
 // $( function() {
 //   $( "#weight-range" ).slider({

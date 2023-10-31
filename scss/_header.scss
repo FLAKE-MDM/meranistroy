@@ -53,6 +53,12 @@
             margin-right: auto;
             width: 8rem;
         }
+
+        &_sm{
+            @include bp(sm){
+                width: 7.2rem;
+            }
+        }
     }
 }
 

@@ -45,6 +45,10 @@
             padding: 0.7rem 0;
         }
 
+        &_dark{
+            border-color: $dark;
+        }
+
         &.has-error{
             border-color: $danger;
             &::-webkit-input-placeholder{color:$danger!important}
@@ -60,27 +64,15 @@
         &:focus{
 
         }
-        &_date{
-            background: url(../img/icons/calendar.svg) 94% 50% no-repeat;
-            background-size: 15px 16px;
-            @include bp(sm){
-                background-position: 94% 50%;
-            }
-        }
+
         &_xs{
-            text-align: center;
-            width: 4.4rem;
-            padding: 1.3rem 1rem;
-            @include bp(sm){
-                width: 4.6rem;
-            }
+            width: 5.1rem;
         }
-        &_lg{
-            padding: 2.3rem 2.4rem;
-            font-size: 1.6rem;
-            @include bp(sm){
-                padding: 2.2rem 2.3rem;
-            }
+        &_sm{
+            width: 6.4rem;
+        }
+        &_md{
+            width: 12.2rem;
         }
     }
     &-check-input{
@@ -242,34 +234,39 @@
 // fake-select
 .fake-select{
     position: relative;
+
     &__info{
         display: inline-block;
         margin-left: 1.2rem;
     }
     &__item{
         display: block;
-        font-size: 1.4rem;
-        line-height: 2rem;
-        &:not(:last-child){
-            margin-bottom: 2rem;
-        }
-        &:hover, &.fake-select__item_active{
+        transition: all 0.3s ease-out;
+        padding: 0.9rem 1.6rem 0.7rem;
+        border-radius: 0.4rem;
+        margin-bottom: 0.2rem;
 
+        @include bp(hv){
+            &:hover{
+                background: #C5E1FF;
+            }
+        }
+
+        &.active{
+            color: #fff;
+            background: $primary;
         }
     }
     &__link{
         white-space: nowrap;
-        &.show{
-        }
-        &.active{
+        display: inline-flex;
+        // &.show{
+        // }
+        // &.active{
 
-        }
-        &::after, &::before{
-            @include bp(md-up){
-                right: 1.9rem;
-            }
-        }
+        // }
     }
+
     &__dropdown{
         padding: 2rem;
         margin-top: 0.4rem;

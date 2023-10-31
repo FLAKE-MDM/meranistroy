@@ -16,7 +16,7 @@
                 &:after{opacity: 1;}
             }
 
-            a:hover>&, .advantages-item:hover &{
+            a:hover>&, .advantages-item:hover &, button:hover>&{
                 &:before{opacity: 0;}
                 &:after{opacity: 1;}
             }
@@ -114,6 +114,40 @@
 .icon-clock-inversion{
     background-image: url(../img/icons/clock-inversion.svg);
 }
+
+.icon-arrow-circle{
+    width: 1.6rem;
+    height: 1.6rem;
+
+    &:before{
+        background-image: url(../img/icons/arrow-circle.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/arrow-circle-active.svg);
+    }
+}
+
+.icon-caret-prev{
+    background-image: url(../img/icons/caret-prev.svg);
+}
+
+.icon-caret-next{
+    background-image: url(../img/icons/caret-next.svg);
+}
+
+.icon-close{
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/icons/close.svg);
+}
+
+.icon-filter{
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/icons/filter.svg);
+}
+
 
 
 

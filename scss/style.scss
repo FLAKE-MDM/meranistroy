@@ -69,6 +69,14 @@ body{
     }
 }
 
+.content{
+    padding-top: 12.4rem;
+
+    @include bp(sm){
+        padding-top: 10.8rem;
+    }
+}
+
 .zoom-link{
     display: block;
     overflow: hidden;
@@ -95,6 +103,12 @@ body{
 
     @include bp(sm){
         margin-top: 8rem;
+    }
+
+    &_md{
+        @include bp(xl-up){
+            margin-top: 14rem;
+        }
     }
 }
 
@@ -237,59 +251,36 @@ body{
 }
 
 // breadcrumb
-.breadcrumb{
-    margin: 3.2rem 0 1.4rem;
-    font-size: 1.2rem;
-    line-height: 2.8rem;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
-    @include bp(md){
-        font-size: 1rem;
-        line-height: 1.2rem;
-        margin: 1.7rem 0 0.5rem;
-    }
-    &__item{
-        margin-bottom: 1rem;
-    }
-    &__item+&__item{
-        &:before{
-            content: '–';
-            color: #000;
-            display: inline-block;
-            margin: 0 0.7rem;
-            @include bp(md){
-                margin: 0 0.55rem;
-            }
-        }
-    }
-}
+// .breadcrumb{
+//     margin: 3.2rem 0 1.4rem;
+//     font-size: 1.2rem;
+//     line-height: 2.8rem;
+//     display: flex;
+//     flex-wrap: wrap;
+//     position: relative;
+//     z-index: 2;
+//     @include bp(md){
+//         font-size: 1rem;
+//         line-height: 1.2rem;
+//         margin: 1.7rem 0 0.5rem;
+//     }
+//     &__item{
+//         margin-bottom: 1rem;
+//     }
+//     &__item+&__item{
+//         &:before{
+//             content: '–';
+//             color: #000;
+//             display: inline-block;
+//             margin: 0 0.7rem;
+//             @include bp(md){
+//                 margin: 0 0.55rem;
+//             }
+//         }
+//     }
+// }
 
-// pagination
-.pagination{
-    margin: 4rem 0 6rem;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    @include bp(md){
-        margin: 3.1rem 0 3.9rem;
-    }
-    &__item{
-        margin: 0 0.9rem 1rem;
-    }
-    &__link{
-        &_circle{
-            border: 1px solid #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            width: 4.4rem;
-            height: 4.4rem;
-            margin: 0 0.9rem;
-        }
-    }
-}
+
 
 
 @import 'form';

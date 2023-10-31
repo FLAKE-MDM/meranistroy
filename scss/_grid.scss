@@ -182,6 +182,10 @@
 }
 
 .grid{
+  &_sm{
+    grid-gap: 1.2rem;
+  }
+
   &-2{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -239,6 +243,12 @@
   &-xl-5{
     @include bp(xl-up){
       grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  &-xxl-3{
+    @include bp(xxl-up){
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
