@@ -259,15 +259,32 @@
   }
 }
 
-.col-2{
-  grid-column: span 2;
+.col{
+  &-2{
+    grid-column: span 2;
+  }
+
+  &-3{
+    grid-column: span 3;
+  }
+
+  &-md-2{
+    @include bp(md-up){
+      grid-column: span 2;
+    }
+  }
 }
 
-.col-3{
-  grid-column: span 3;
-}
-.row-2{
-  grid-row: span 2;
+.row{
+  &-2{
+    grid-row: span 2;
+  }
+
+  &-md-2{
+    @include bp(md-up){
+      grid-row: span 2;
+    }
+  }
 }
 
 .me{
@@ -296,7 +313,7 @@
   }
 
   &-xl{
-
+    
   }
 }
 
@@ -306,7 +323,11 @@
   }
 
   &-xs{
+    margin-bottom: 0.8rem;
 
+    @include bp(sm){
+      margin-bottom: 0.5rem;
+    }
   }
 
   &-sm{
