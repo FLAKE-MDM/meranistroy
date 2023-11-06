@@ -107,8 +107,24 @@
     background-image: url(../img/icons/prev.svg);
 }
 
+.icon-prev-inverison{
+    background-image: url(../img/icons/prev-inverison.svg);
+}
+
+.icon-prev-dark{
+    background-image: url(../img/icons/prev-dark.svg);
+}
+
 .icon-next{
     background-image: url(../img/icons/next.svg);
+}
+
+.icon-next-inverison{
+    background-image: url(../img/icons/next-inverison.svg);
+}
+
+.icon-next-dark{
+    background-image: url(../img/icons/next-dark.svg);
 }
 
 .icon-clock-inversion{
@@ -148,29 +164,18 @@
     background-image: url(../img/icons/filter.svg);
 }
 
+.icon-zoom{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/icons/zoom.svg);
 
-
-
-
-
-
-
-
-.icon-{
-    width: rem;
-    height: rem;
-    background-image: url(../img/icons/.svg);
-}
-
-.icon-{
-    width: rem;
-    height: rem;
-
-    &:before{
-        background-image: url(../img/icons/.svg);
-    }
-
-    &:after{
-        background-image: url(../img/icons/-active.svg);
+    @include bp(sm){
+      width: 2rem;
+      height: 2rem;
     }
 }
+
+.icon-close-inversion{
+    background-image: url(../img/icons/close-inversion.svg);
+}
+

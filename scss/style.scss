@@ -171,13 +171,22 @@ body{
 // swiper
 .swiper{
     &-pagination{
-        &-bullet{
-            width: 0.6rem;
-            height: 0.6rem;
-            margin: 0 0.4rem;
-            opacity: 1;
-            &:hover, &-active{
+        // &-bullet{
+        //     width: 0.6rem;
+        //     height: 0.6rem;
+        //     margin: 0 0.4rem;
+        //     opacity: 1;
+        //     &:hover, &-active{
 
+        //     }
+        // }
+
+        &_lg{
+            font-size: 4.2rem;
+            line-height: 104.762%;
+
+            @include bp(sm){
+                font-size: 1.8rem;
             }
         }
     }
@@ -200,10 +209,19 @@ body{
             @include bp(sm){
                 margin-bottom: 0.8rem;
             }
+
+            &_lg{
+                margin-bottom: 1.9rem;
+
+                @include bp(sm){
+                    margin-bottom: 1.1rem;
+                    letter-spacing: 0.03rem;
+                }
+            }
         }
     }
 
-    .swiper-button-prev, .swiper-button-next{
+    &-button-prev, &-button-next{
         width: 4rem;
         height: 4rem;
         display: flex;
@@ -231,6 +249,46 @@ body{
             @include bp(sm){
                 width: 2rem;
                 height: 2rem;
+            }
+        }
+    }
+
+    &-button_light{
+        background: rgba(248, 252, 255, 0.40);
+
+        @include bp(hv){
+            &:hover{
+                background: rgba(248, 252, 255, 0.60);
+            }
+        }
+    }
+
+    &-button_dark{
+        background: #D9ECFF;
+
+        @include bp(hv){
+            &:hover{
+                background: darken($color: #D9ECFF, $amount: 10);
+            }
+        }
+    }
+
+    &-button_lg{
+        width: 6.4rem;
+        height: 6.4rem;
+
+        @include bp(sm){
+            width: 4rem;
+            height: 4rem;
+        }
+
+        .icon{
+            width: 4.3rem;
+            height: 4.3rem;
+
+            @include bp(sm){
+                width: 2.7rem;
+                height: 2.7rem;
             }
         }
     }
@@ -289,6 +347,8 @@ body{
 @import 'catalogue';
 @import 'footer';
 @import 'contatcs';
+@import 'product';
+@import 'error';
 
 
 

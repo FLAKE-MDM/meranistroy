@@ -1,0 +1,38 @@
+.error-section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/error-bg.jpg) 50% 0 no-repeat;
+  background-size: cover;
+
+  @include bp(sm){
+    background: url(../img/error-bg-m.jpg) 100% 100% no-repeat;
+    background-size: 100% auto;
+    padding: 13rem 0 14.2rem;
+  }
+
+  &__content{
+    margin: 9.3% auto 0;
+    width: 65.5rem;
+    max-width: 100%;
+
+    @include bp(sm){
+      margin-top: 0;
+    }
+  }
+
+  &__title{
+    font-size: 10.8rem;
+
+    @include bp(sm){
+      margin-bottom: 0.9rem;
+    }
+  }
+
+  .mb-sm{
+    @include bp(sm){
+      margin-bottom: 2rem;
+    }
+  }
+}

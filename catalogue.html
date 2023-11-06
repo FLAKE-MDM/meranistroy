@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МераниСтрой</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body_home">
@@ -625,11 +626,61 @@
     </div>
 
 
+    <!-- consultation -->
+    <div class="modal fade" id="consultation">
+        <div class="modal-dialog modal-dialog_md">
+            <div class="modal__content">
+                <button type="button" class="modal-close modal__close"><span class="icon icon-close-inversion"></span></button>
+                <div class="modal__header">
+                    <div class="text_size-md text_mediumbold modal__title">Оставьте заявку на консультацию</div>
+                    <p class="text_dark">Заполните форму, чтобы получить персональную консультацию от наших экспертов.</p>
+                </div>
+                <div class="modal__form">
+                    <form action="#">
+                        <div class="form-group">
+                            <div class="form-group__label text_size-sm">Ваше имя</div>
+                            <input type="text" class="form-control form-control_primary" placeholder="Иван Иванов">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group__label text_size-sm">Номер телефона</div>
+                            <input type="tel" class="form-control form-control_primary mask" placeholder="+7 999 999 999" inputmode="text">
+                        </div>
+                        <div class="form-group_sm">
+                            <div class="form-group__label text_size-sm">Сообщение</div>
+                            <input type="text" class="form-control form-control_primary" placeholder="Напишите нам, если у вас есть вопросы">
+                        </div>
+                        <div class="form-group_sm">
+                            После подачи заявки, мы свяжемся с вами в течение <br class="d-none d-md-block">
+                            <a href="#" class="link_underline link_dark">1  рабочего часа.</a>
+                        </div>
+                        <button href="#success" class="btn btn_primary w-100_sm no-change modal-open">Получить консультацию</button>
+                    </form>
+                </div>
+                <div class="modal__footer text_size-sm text_dark">
+                    Нажимая кнопку “Получить консультацию”, вы даете согласие на обработку <a href="#" class="link_underline text_primary">Персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /consultation -->
 
+    <!-- success -->
+    <div class="modal fade d-flex align-items-center justify-content-center" id="success">
+        <div class="modal-dialog">
+            <div class="modal__content">
+                <button type="button" class="modal-close modal__close d-none d-md-block"><span class="icon icon-close-inversion"></span></button>
+                <div class="text_size-md text_mediumbold modal__title mb-xs">Благодарим за заявку!</div>
+                <p class="text_dark">Ответим в течение 1 рабочего часа</p>
+                <a href="home.html" class="btn btn_primary">Вернуться на главную</a>
+             </div>
+        </div>
+    </div>
+    <!-- /success -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

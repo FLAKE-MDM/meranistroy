@@ -532,18 +532,23 @@
 }
 
 .tab-nav{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: -0.1rem 0 4rem;
+  margin-top: -0.1rem;
 
-  @include bp(md){
-    grid-template-columns: repeat(2, 1fr);
-  }
+  &:not(.d-grid){
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 4rem;
 
-  @include bp(sm){
-    margin: 0 0 2.2rem;
-    grid-template-rows: repeat(2, 1fr);
+    @include bp(md){
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include bp(sm){
+      margin: 0 0 2.2rem;
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
+  
 
   &__item{
     margin-right: -0.1rem;
