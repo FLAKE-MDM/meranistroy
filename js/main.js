@@ -108,14 +108,12 @@ $(".modal").mousedown(function(e){
     if(e.target == elem){
       $(this).removeClass("show");
       $('body').removeClass('overflow-none');
-      $('.login__mobile-link').removeClass('active');
     }
   }
   for(let elem of modalsGroup){
     if(e.target == elem){
       $(this).removeClass("show");
       $('body').removeClass('modal-open');
-      $('.login__mobile-link').removeClass('active');
     }
   }
 });
