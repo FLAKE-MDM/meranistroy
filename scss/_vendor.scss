@@ -143,6 +143,15 @@
       }
     }
   }
+
+  &__form{
+    @include bp(sm){
+      .btn {
+        font-size: 1.6rem;
+        padding: 1rem 3.2rem;
+      }
+    }
+  }
 }
 
 .modal-dialog {

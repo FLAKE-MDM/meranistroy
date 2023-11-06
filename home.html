@@ -16,8 +16,10 @@
             <div class="container container_lg">
                 <div class="d-flex align-items-center justify-content-between">
                     <a href="index.html" class="logo header__logo">
-                        <img src="img/logo-inversion.svg" alt="" class="img-fluid fixed-none">
-                        <img src="img/logo.svg" alt="" class="img-fluid fixed-block">
+                        <img src="img/logo-inversion.svg" alt="" class="img-fluid fixed-none d-none d-md-block">
+                        <img src="img/logo.svg" alt="" class="img-fluid fixed-block d-none d-md-block">
+                        <img src="img/logo-secondary-inversion.svg" alt="" class="img-fluid fixed-none d-md-none">
+                        <img src="img/logo-secondary.svg" alt="" class="img-fluid fixed-block d-md-none">
                     </a>
                     <nav class="nav collapse" id="nav">
                         <ul class="nav-list d-md-flex align-items-center">
@@ -57,7 +59,7 @@
                             </a>
                         </li>
                         <li class="contacts-list__item">
-                            <div class="d-inline-flex d-md-none align-items-center text_inversion text_mediumbold">
+                            <div class="d-inline-flex align-items-center text_inversion text_mediumbold">
                                 <span class="icon icon-clock-inversion contacts-list__icon"></span>
                                 ПН-ВС С 9:00 ДО 21:00
                             </div>
@@ -172,14 +174,15 @@
         </section>
         <!-- /steps -->
         <!-- advantages -->
-        <section class="advantages-section section d-none d-md-block">
+        <section class="advantages-section section">
             <div class="container">
                 <div class="d-flex align-items-baseline justify-content-between">
                     <h2 class="title me-2 mb-lg"><div class="title__num">(03)</div>Акцент на комфорт и безопасность</h2>
-                    <a href="#" class="d-inline-flex align-items-center">Получить консультацию<span class="icon icon-arrow icon_double icon_link"></span></a>
+                    <a href="#" class="d-none d-md-inline-flex align-items-center">Получить консультацию<span class="icon icon-arrow icon_double icon_link"></span></a>
                 </div>
                 <div class="advantages-section__text">
                     Покоряем сердца наших клиентов современными домами по доступным ценам, предоставляем лучший сервис и четко отслеживаем каждый этап работы.
+                      <a href="#" class="d-inline-flex d-md-none align-items-center advantages-section__link">Получить консультацию<span class="icon icon-arrow icon_double icon_link"></span></a>
                 </div>
                 <div class="advantages-section__row">
                     <div class="advantages-item">
@@ -413,6 +416,25 @@
                         </div>
                         <a href="#" class="d-inline-flex align-items-center">Подробнее<span class="icon icon-arrow icon_double icon_link"></span></a>
                     </div>
+                    <div class="catalogue-item d-md-none">
+                        <a href="project.html" class="catalogue-item__image zoom-link"><img src="img/content/catalogue.jpg" alt="" class="img-fluid"></a>
+                        <h3 class="catalogue-item__title text_mediumbold text_size-md">Проект М5-14</h3>
+                        <div class="info d-grid grid-3 catalogue-item__info">
+                            <div class="info__item">
+                                <p class="text_dark">Цена</p>
+                                <p>7 084 000 ₽</p>
+                            </div>
+                            <div class="info__item">
+                                <p class="text_dark">Площадь</p>
+                                <p>102,98 м2</p>
+                            </div>
+                            <div class="info__item">
+                                <p class="text_dark">Этажей</p>
+                                <p>2</p>
+                            </div>
+                        </div>
+                        <a href="#" class="d-inline-flex align-items-center">Подробнее<span class="icon icon-arrow icon_double icon_link"></span></a>
+                    </div>
                 </div>
                 <div class="catalogue-section__btn">
                     <a href="catalogue.html" class="btn btn_light w-100">Все проекты</a>
@@ -437,7 +459,7 @@
                     <a href="#faq-2" class="collapse-link faq-item__link text_size-md text_mediumbold">Какие дополнительные услуги вы предлагаете в рамках строительства коттеджей?</a>
                     <div class="collapse" id="faq-2">
                         <div class="faq-item__body">
-                            На силовой каркас предоставляем гарантию от 20 лет, на все остальные работы — от 2 лет.
+                            Проводим архитектурное консультирование, работаем с ландшафтным дизайном, берем на себя всю юридическую работу. Также помогаем в оформлении ипотеки.
                         </div>
                     </div>
                 </div>
@@ -445,7 +467,7 @@
                     <a href="#faq-3" class="collapse-link faq-item__link text_size-md text_mediumbold">Какая гарантия, что строительство будет выполнено в срок?</a>
                     <div class="collapse" id="faq-3">
                         <div class="faq-item__body">
-                            На силовой каркас предоставляем гарантию от 20 лет, на все остальные работы — от 2 лет.
+                            В договоре зафиксированы срок сдачи дома и наша ответственность за нарушение обязательств.
                         </div>
                     </div>
                 </div>
@@ -453,7 +475,7 @@
                     <a href="#faq-4" class="collapse-link faq-item__link text_size-md text_mediumbold">Возможно ли внесение изменений в проект коттеджа в процессе строительства?</a>
                     <div class="collapse" id="faq-4">
                         <div class="faq-item__body">
-                            На силовой каркас предоставляем гарантию от 20 лет, на все остальные работы — от 2 лет.
+                            Компания открыта для диалога и корректировок, однако, это повлияет на сроки и бюджет строительства. В таком случае клиент будет обязан оплатить дополнительные расходы.
                         </div>
                     </div>
                 </div>
@@ -461,7 +483,7 @@
                     <a href="#faq-5" class="collapse-link faq-item__link text_size-md text_mediumbold">Кто занимается оформлением и выдачей всех необходимых документов и разрешений на дом?</a>
                     <div class="collapse" id="faq-5">
                         <div class="faq-item__body">
-                            На силовой каркас предоставляем гарантию от 20 лет, на все остальные работы — от 2 лет.
+                            Консультируем каждого клиента, в том числе помогаем оформить ипотеку. 
                         </div>
                     </div>
                 </div>

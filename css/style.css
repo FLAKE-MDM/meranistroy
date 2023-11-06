@@ -566,6 +566,12 @@ input:hover::-webkit-inner-spin-button {
     padding: 1rem 3.2rem;
   }
 }
+@media only screen and (max-width: 767px) {
+  .modal__form .btn {
+    font-size: 1.6rem;
+    padding: 1rem 3.2rem;
+  }
+}
 
 .modal-dialog {
   position: relative;
@@ -1509,6 +1515,39 @@ body.overflow-none {
   border-width: 8px;
 }
 
+.rating {
+  width: 13.6rem;
+  height: 2.4rem;
+  position: relative;
+  background: url(../img/icons/rating.svg) 0 0 no-repeat;
+  background-size: auto 100%;
+  margin-right: 1.2rem;
+}
+@media only screen and (max-width: 767px) {
+  .rating {
+    height: 1.9rem;
+    width: 10.8rem;
+  }
+}
+.rating__active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: url(../img/icons/rating-active.svg) 0 0 no-repeat;
+  background-size: auto 100%;
+}
+.rating_lg {
+  width: 14.6rem;
+  height: 2.5rem;
+}
+@media only screen and (max-width: 991px) {
+  .rating_lg {
+    width: 9.3rem;
+    height: 1.6rem;
+  }
+}
+
 .fake-select {
   position: relative;
 }
@@ -1762,7 +1801,7 @@ body.overflow-none {
 @media only screen and (min-width: 768px) {
   .image-slider {
     position: absolute;
-    top: 0;
+    top: -0.2rem;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1775,9 +1814,14 @@ body.overflow-none {
 .contacts-list__item {
   margin-right: 7.9rem;
 }
+@media only screen and (max-width: 1399px) {
+  .contacts-list__item {
+    margin-right: 4rem;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .contacts-list__item {
-    margin-right: 5rem;
+    margin-right: 2rem;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1803,6 +1847,11 @@ body.overflow-none {
 }
 .logos-list__item {
   margin-left: 5.1rem;
+}
+@media only screen and (max-width: 1199px) {
+  .logos-list__item {
+    margin-left: 1rem;
+  }
 }
 @media only screen and (max-width: 991px) {
   .logos-list__item {
@@ -2013,6 +2062,12 @@ body.overflow-none {
 .advantages-section {
   padding-bottom: 8.2rem;
 }
+@media only screen and (max-width: 767px) {
+  .advantages-section {
+    padding-bottom: 0;
+    margin-bottom: -0.5rem;
+  }
+}
 .advantages-section__text {
   max-width: 49rem;
   margin-bottom: -0.1rem;
@@ -2021,9 +2076,19 @@ body.overflow-none {
   display: grid;
   grid-template-columns: repeat(3, 33.3%);
 }
+@media only screen and (max-width: 767px) {
+  .advantages-section__row {
+    grid-template-columns: 100%;
+    grid-gap: 2rem;
+  }
+}
+.advantages-section__link {
+  margin: 2.5rem 0 3.1rem;
+  font-size: 1.7rem;
+}
 .advantages-item {
   border: 1px solid #B8DBFF;
-  padding: 3.9rem 3.1rem 3.8rem;
+  padding: 3.9rem 2.1rem 3.8rem 3.1rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -2038,11 +2103,35 @@ body.overflow-none {
     min-height: 1rem;
   }
 }
+@media only screen and (max-width: 767px) {
+  .advantages-item {
+    min-height: 35.4rem;
+    padding: 2.4rem 2.3rem 2.3rem;
+    color: #fff;
+    font-size: 1.7rem;
+  }
+  .advantages-item .icon-snowflake:before {
+    opacity: 0;
+  }
+  .advantages-item .icon-snowflake:after {
+    opacity: 1;
+  }
+}
 .advantages-item:nth-of-type(1), .advantages-item:nth-of-type(4) {
   transform: translateY(8rem);
 }
+@media only screen and (max-width: 767px) {
+  .advantages-item:nth-of-type(1), .advantages-item:nth-of-type(4) {
+    transform: none;
+  }
+}
 .advantages-item:nth-of-type(2), .advantages-item:nth-of-type(5) {
   transform: translateY(4rem);
+}
+@media only screen and (max-width: 767px) {
+  .advantages-item:nth-of-type(2), .advantages-item:nth-of-type(5) {
+    transform: none;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
   .advantages-item:hover {
@@ -2062,6 +2151,11 @@ body.overflow-none {
   opacity: 0;
   transition: all 0.3s ease-out;
 }
+@media only screen and (max-width: 767px) {
+  .advantages-item__image {
+    opacity: 1;
+  }
+}
 .advantages-item__icon {
   margin-bottom: auto;
 }
@@ -2070,8 +2164,19 @@ body.overflow-none {
     margin-bottom: 2rem;
   }
 }
+@media only screen and (max-width: 767px) {
+  .advantages-item__icon {
+    margin-bottom: auto;
+  }
+}
 .advantages-item__title {
   margin-bottom: 1.3rem;
+}
+@media only screen and (max-width: 767px) {
+  .advantages-item__title {
+    font-size: 2.2rem;
+    line-height: 145.455%;
+  }
 }
 .advantages-item p {
   margin-bottom: 0;
@@ -2506,7 +2611,7 @@ body.overflow-none {
     left: 0;
     right: 0;
     z-index: 95;
-    background: #fff;
+    background: #F8FCFF;
     transition: all 0.3s ease-out;
     transform: translateX(100%);
     padding: 0;
