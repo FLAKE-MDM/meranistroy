@@ -3,9 +3,16 @@
   background: $black url(../img/preview-bg.jpg) 50% 50% no-repeat;
   background-size: cover;
   padding-top: 25.8rem;
+  min-height: 100vh;
+  display: flex;
 
   @include bp(sm){
     padding-top: 27.4rem;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
   }
 
   &__title{
@@ -37,6 +44,8 @@
   }
 
   &__content{
+    margin: auto 0;
+
     @include bp(sm){
       font-weight: 400;
       font-size: 1.6rem;
@@ -449,6 +458,10 @@
     content: "";
     display: block;
     padding-top: 55.55%;
+
+    @include bp(xxxl-up){
+      padding-top: 56.55%;
+    }
   }
 
   &-item {
@@ -519,11 +532,11 @@
     }
 
     &__image{
-      @include bp(sm){
-        img{
-          width: 100%;
-        }
-      }
+      // @include bp(sm){
+      //   img{
+      //     width: 100%;
+      //   }
+      // }
     }
 
     .image-absolute{

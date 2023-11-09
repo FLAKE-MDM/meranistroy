@@ -132,32 +132,6 @@ function checkResolution() {
 window.addEventListener('load', checkResolution);
 window.addEventListener('resize', checkResolution);
 
-// video
-$('.video-block').each(function() {
-  let video = $(this).find('.embed-responsive-item')[0];
-  let playBtn = $(this).find(".play-btn");
-
-  playBtn.on('click', function(e) {
-    e.preventDefault();
-    $(this).hide();
-    video.play();
-    video.controls = true;
-  });
-
-  video.addEventListener('click', function() {
-    if (!video.paused) {
-      video.pause();
-      playBtn.show();
-      video.controls = false;
-    }
-  });
-
-  video.onended = function() {
-    playBtn.show();
-    video.controls = false;
-  };
-});
-
 new Swiper(".image-slider", {
   loop: true,
   slidesPerView: 1,
