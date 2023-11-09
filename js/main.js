@@ -113,7 +113,7 @@ $(".modal").mousedown(function(e){
   for(let elem of modalsGroup){
     if(e.target == elem){
       $(this).removeClass("show");
-      $('body').removeClass('modal-open');
+      $('body').removeClass('overflow-none');
     }
   }
 });
