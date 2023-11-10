@@ -233,6 +233,8 @@
       right: 0;
       top: 1.8rem;
       width: 50%;
+      max-height: 100%;
+      overflow: hidden;
 
       @include bp(sm){
         width: auto;
